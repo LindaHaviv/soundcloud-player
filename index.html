@@ -1,0 +1,138 @@
+<html class="html">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div id="preview-container">
+    <a href="#" title="" alt="" target="_blank">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/blank.png" />
+    </a>
+    <p></p>
+  </div>
+  <svg class="vinylSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 600 600" enable-background="new 0 0 600 900" xml:space="preserve">
+    <defs>
+      <path id="titlePath" fill="none" stroke="#FF0049" stroke-miterlimit="10" d="M284,346.5c-14.6,0-26.5-11.9-26.5-26.5
+    c0-14.6,11.9-26.5,26.5-26.5s26.5,11.9,26.5,26.5C310.5,334.6,298.6,346.5,284,346.5z" />
+    </defs>
+
+    <g id="vinylGroup">
+      <circle id="vinylMain" fill="#2A2525" cx="284" cy="320" r="121" />
+
+      <circle id="vinylStart" fill="#262121" cx="284" cy="320" r="117" />
+      <circle id="vinylEnd" fill="#2A2525" cx="284" cy="320" r="50" />
+      <circle id="vinylLabel" fill="#FF5F00" cx="284" cy="320" r="40.8" />
+      <circle id="vinylInner" fill="#FF914F" cx="284" cy="320" r="17" />
+      <circle id="vinylHole" fill="#eff2e1" cx="284" cy="320" r="2.5" />
+
+
+    </g>
+    <g id="vinylShineGroup" stroke="#403737" stroke-linecap="round" stroke-linejoin="round">
+      <circle id="vinylShine1" opacity="0.3" fill="none" cx="284" cy="320" r="103" />
+      <circle id="vinylShine2" opacity="0.3" fill="none" cx="284" cy="320" r="91" />
+      <circle id="vinylShine3" opacity="0.3" fill="none" cx="284" cy="320" r="60" />
+      <g id="titleGroup" stroke="none" opacity="1">
+        <text>
+          <textPath id="vinylTitle" xlink:href="#titlePath">-</textPath>
+        </text>
+      </g>
+    </g>
+    <g id="armGroup">
+      <path id="arm" fill="none" stroke="#9F978D" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M398.5,159v29c0,0-5.7,11.2-6.4,15.2
+    s-4.3,16.2,7.6,30.1s81.7,93.9,85.5,99.4c3.7,5.5,5.1,8.7,3.4,20.2" />
+      <circle id="balance" fill="#CCCBCB" cx="396.5" cy="188" r="19" />
+      <path id="stylus" fill="#18110E" d="M489.9,367.5l-11.5-1.1c-2.2-0.2-3.8-2.2-3.6-4.4l1.5-15.9c0.2-2.2,2.2-3.8,4.4-3.6
+    l11.5,1.1c2.2,0.2,3.8,2.2,3.6,4.4l-1.5,15.9C494,366.1,492.1,367.7,489.9,367.5z" />
+    </g>
+    <g id="circleDragger" opacity="0">
+      <circle cx="396.5" cy="188" r="190" fill="rgba(89,89,89,0.2)" stroke="red" />
+      <rect id="dragger" x="472" y="338" fill="#EF2572" width="26" height="36" opacity="1" />
+    </g>
+
+  </svg>
+  <div id="image-container"></div>
+</div>
+
+<div id="search-box">
+  <svg class="searchSVG" viewBox="0 0 60 60" width="60px" height="60px">
+    <defs>
+    </defs>
+
+    <g id="searchIcon">
+      <circle fill="none" stroke="#FF5F00" stroke-width="3" stroke-miterlimit="10" cx="35.6" cy="24.1" r="9" />
+      <path fill="#FF5F00" d="M14.7,42.1l13.4-13.4l2.9,2.9L17.5,45c-0.8,0.8-2.1,0.8-2.9,0h0C13.9,44.2,13.9,42.9,14.7,42.1z" />
+    </g>
+
+    <rect id="go" width="60" height="60" opacity="0" />
+  </svg>
+  <input id="search-field" autocomplete type="search" placeholder="Search SoundCloud..." value="" />
+  <p>Play SoundCloud music and sounds on vinyl</p>
+
+  <svg class="scLogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500" height="500">
+    <defs>
+    </defs>
+    <g id="scLogo">
+      <g>
+        <path fill="#FFFFFF" d="M4.1,19.3c-0.2,0-0.3,0.1-0.4,0.3c0,0-0.8,7.7-0.8,7.7l0.8,7.5c0,0.2,0.2,0.3,0.4,0.3
+      c0.2,0,0.3-0.1,0.4-0.3l1-7.5l-1-7.7C4.5,19.4,4.3,19.3,4.1,19.3z" />
+        <path fill="#FFFFFF" d="M1,22.2c-0.2,0-0.3,0.1-0.3,0.3L0,27.3L0.6,32c0,0.2,0.2,0.3,0.3,0.3c0.2,0,0.3-0.1,0.3-0.3l0.7-4.7
+      l-0.7-4.8C1.3,22.4,1.1,22.2,1,22.2z" />
+        <path fill="#FFFFFF" d="M7.5,17.8c-0.2,0-0.4,0.2-0.4,0.4c0,0-0.8,9.1-0.8,9.1l0.8,8.8c0,0.2,0.2,0.4,0.4,0.4
+      c0.2,0,0.4-0.2,0.4-0.4l0.9-8.8l-0.9-9.1C7.9,18,7.7,17.8,7.5,17.8z" />
+        <path fill="#FFFFFF" d="M10.9,17.5c-0.3,0-0.5,0.2-0.5,0.5l-0.8,9.4l0.8,9.1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5l0.9-9.1
+      l-0.9-9.4C11.4,17.7,11.1,17.5,10.9,17.5z" />
+        <polygon fill="#FFFFFF" points="14.9,36.5 14.9,36.5 14.9,36.5     " />
+        <path fill="#FFFFFF" d="M14.9,18.6c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.2-0.6,0.6L13,27.3l0.7,9.1c0,0.3,0.3,0.6,0.6,0.6
+      c0.3,0,0.6-0.2,0.6-0.6l0.8-9.1L14.9,18.6z" />
+        <path fill="#FFFFFF" d="M17.7,12.5c-0.3,0-0.6,0.3-0.6,0.6c0,0-0.7,14.1-0.7,14.1l0.7,9.1c0,0.4,0.3,0.6,0.6,0.6
+      c0.3,0,0.6-0.3,0.6-0.6v0l0.8-9.1l-0.8-14.1C18.4,12.8,18.1,12.5,17.7,12.5z" />
+        <path fill="#FFFFFF" d="M21.2,9.3c-0.4,0-0.7,0.3-0.7,0.7c0,0-0.6,17.4-0.6,17.4l0.6,9.1c0,0.4,0.3,0.7,0.7,0.7
+      c0.4,0,0.7-0.3,0.7-0.7l0,0l0.7-9.1L21.9,10C21.9,9.6,21.6,9.3,21.2,9.3z" />
+        <path fill="#FFFFFF" d="M24.7,7.7c-0.4,0-0.8,0.3-0.8,0.8c0,0-0.6,18.8-0.6,18.8l0.6,9c0,0.4,0.4,0.8,0.8,0.8
+      c0.4,0,0.8-0.3,0.8-0.8l0,0l0.7-9L25.5,8.5C25.5,8.1,25.1,7.7,24.7,7.7z" />
+        <path fill="#FFFFFF" d="M29.1,7.9c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9l-0.5,19.5l0.5,8.9c0,0.5,0.4,0.9,0.9,0.9
+      c0.5,0,0.9-0.4,0.9-0.9l0.6-8.9L29.1,7.9z" />
+        <polygon fill="#FFFFFF" points="29.1,36.3 29.1,36.3 29.1,36.3     " />
+        <path fill="#FFFFFF" d="M31.8,7.4c-0.5,0-0.9,0.4-0.9,0.9l-0.5,19l0.5,8.8c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9v0l0.6-8.8
+      l-0.6-19C32.7,7.8,32.3,7.4,31.8,7.4z" />
+        <path fill="#FFFFFF" d="M35.4,8.1c-0.6,0-1,0.4-1,1l-0.5,18.3l0.5,8.8c0,0.6,0.5,1,1,1c0.6,0,1-0.4,1-1v0l0.5-8.8L36.4,9.1
+      C36.4,8.5,35.9,8.1,35.4,8.1z" />
+        <path fill="#FFFFFF" d="M39.6,4.7c-0.2-0.1-0.4-0.2-0.6-0.2c-0.2,0-0.4,0.1-0.6,0.2c-0.3,0.2-0.5,0.5-0.5,0.9l0,0.2l-0.4,21.5
+      c0,0,0.4,8.7,0.4,8.7c0,0,0,0,0,0c0,0.2,0.1,0.5,0.3,0.6c0.2,0.2,0.5,0.4,0.8,0.4c0.3,0,0.6-0.1,0.8-0.3c0.2-0.2,0.3-0.5,0.3-0.8
+      l0-0.9l0.4-7.9L40.1,5.6C40.1,5.2,39.9,4.9,39.6,4.7z" />
+        <polygon fill="#FFFFFF" points="40.1,36.1 40.1,36.1 40.1,36.1 40.1,36.1 40.1,36.1 40.1,36.1 40.1,36.1     " />
+        <path fill="#FFFFFF" d="M43.2,2.6c-0.2-0.1-0.4-0.2-0.6-0.2c-0.3,0-0.5,0.1-0.7,0.3c-0.3,0.2-0.4,0.5-0.4,0.9l0,0.1L41,27.3
+      l0.2,4.4l0.2,4.2c0,0.6,0.5,1.1,1.2,1.1c0.6,0,1.1-0.5,1.2-1.2v0v0l0.5-8.6v0L43.7,3.6C43.7,3.2,43.5,2.8,43.2,2.6z" />
+        <path fill="#FFFFFF" d="M75.1,16.1c-1.4,0-2.8,0.3-4.1,0.8C70.1,7.4,62.2,0,52.5,0c-2.4,0-4.7,0.5-6.7,1.3c-0.8,0.3-1,0.6-1,1.2
+      c0,0,0,33.4,0,33.4c0,0.6,0.5,1.1,1.1,1.2c0,0,29.2,0,29.2,0c5.8,0,10.5-4.7,10.5-10.5C85.6,20.8,80.9,16.1,75.1,16.1z" />
+      </g>
+      <path fill="#FFFFFF" d="M8.4,43.4c-1.2-0.3-1.6-0.4-1.6-0.9c0-0.3,0.3-0.7,1.1-0.7c0.7,0,1.3,0.3,1.8,0.8l1.1-1.1
+    c-0.7-0.8-1.6-1.2-2.8-1.2c-1.5,0-2.8,0.9-2.8,2.3c0,1.5,1,2,2.4,2.3c1.5,0.3,1.7,0.6,1.7,1.1c0,0.6-0.4,0.8-1.4,0.8
+    c-0.7,0-1.4-0.3-2-0.9l-1.1,1c0.6,0.9,1.7,1.4,3,1.4c2.1,0,3.1-1,3.1-2.5C11,44.2,9.6,43.7,8.4,43.4z M15.6,40.3
+    c-2.1,0-3.4,1.6-3.4,4c0,2.4,1.3,4,3.4,4c2.1,0,3.4-1.6,3.4-4C18.9,41.9,17.7,40.3,15.6,40.3z M15.6,46.8c-1.3,0-1.8-1.1-1.8-2.5
+    c0-1.4,0.5-2.5,1.8-2.5c1.3,0,1.8,1.1,1.8,2.5C17.3,45.7,16.8,46.8,15.6,46.8z M25.2,44.8c0,1.2-0.6,2-1.6,2c-1,0-1.6-0.8-1.6-2
+    v-4.3h-1.6v4.4c0,2.3,1.3,3.5,3.1,3.5c2,0,3.2-1.3,3.2-3.6v-4.3h-1.6V44.8z M33.5,43.7c0,0.4,0,1.4,0,1.7c-0.1-0.2-0.4-0.6-0.5-0.9
+    l-2.8-4.1h-1.5v7.8h1.5v-3.4c0-0.4,0-1.4,0-1.7c0.1,0.2,0.4,0.6,0.5,0.9l2.9,4.2H35v-7.8h-1.5V43.7z M39.5,40.4H37v7.8h2.3
+    c2,0,4-1.2,4-3.9C43.3,41.5,41.7,40.4,39.5,40.4z M39.4,46.7h-0.8v-4.8h0.8c1.6,0,2.3,0.8,2.3,2.4C41.7,45.7,41,46.7,39.4,46.7z
+     M48.2,41.8c0.7,0,1.1,0.3,1.4,0.8L51,42c-0.5-1-1.4-1.7-2.8-1.7c-2,0-3.5,1.6-3.5,4c0,2.5,1.4,4,3.4,4c1.4,0,2.3-0.7,2.9-1.8
+    l-1.3-0.8c-0.4,0.7-0.8,1-1.5,1c-1.2,0-1.8-1.1-1.8-2.5C46.3,42.9,47,41.8,48.2,41.8z M53.9,40.4h-1.6v7.8H57v-1.5h-3.1V40.4z
+     M61.1,40.3c-2.1,0-3.4,1.6-3.4,4c0,2.4,1.3,4,3.4,4c2.1,0,3.4-1.6,3.4-4C64.5,41.9,63.3,40.3,61.1,40.3z M61.1,46.8
+    c-1.3,0-1.8-1.1-1.8-2.5c0-1.4,0.5-2.5,1.8-2.5c1.3,0,1.8,1.1,1.8,2.5C62.9,45.7,62.4,46.8,61.1,46.8z M70.8,44.8
+    c0,1.2-0.6,2-1.6,2c-1,0-1.6-0.8-1.6-2v-4.3h-1.6v4.4c0,2.3,1.3,3.5,3.1,3.5c2,0,3.2-1.3,3.2-3.6v-4.3h-1.6V44.8z M76.7,40.4h-2.4
+    v7.8h2.3c2,0,4-1.2,4-3.9C80.6,41.5,79,40.4,76.7,40.4z M76.6,46.7h-0.8v-4.8h0.8c1.6,0,2.3,0.8,2.3,2.4
+    C79,45.7,78.3,46.7,76.6,46.7z" />
+    </g>
+  </svg>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/utils/Draggable.min.js"></script>
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=12"></script> -->
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+<script src="main.js"></script>
+  
+</body>
+</html>
